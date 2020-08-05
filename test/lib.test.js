@@ -53,7 +53,7 @@ describe("getProduct", () => {
 
 //testing exceptions
 describe("registerUser", () => {
-  it("should throw if username is falsy", () => {
+  it("should throw an exception if username is falsy", () => {
     const args = [null, undefined, "", 0, false, NaN];
     args.forEach((a) => {
       expect(() => {
